@@ -1,0 +1,78 @@
+/*		Desktop version		*/
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+section{
+	float: left;
+	width: 30.66%;
+	margin-left: 2%;
+	border: 2px solid black;
+	padding: 1%;
+	padding-top: 0%;
+	text-align: left;
+	overflow: auto;
+	background-color: grey;
+	font-weight: 600;
+}
+h1{
+	text-align: center;
+	font-size: 175%;
+}
+.t1, .t2, .t3{
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	width: 33%;
+	padding: 1% 3% 1% 3%;
+	text-align: center;
+	position: relative;
+	left: 70.5%;
+	font-weight: bold;
+	margin-bottom: 2%;
+	font-size: 125%;
+}
+.t1{
+	background-color: pink;
+	color: black;
+}
+.t2{
+	background-color: red;
+	color: white;
+}
+.t3{
+	background-color: yellow;
+	color: black;
+}
+
+/*		Tablet version		*/
+@media(min-width:768px) and (max-width:991px){
+	.t1, .t2{
+		left: 69.2%;
+	}
+	.t3{
+		left: 85.55%;
+		padding: 0.6%;
+		width: 15.5%;
+	}
+	.s1, .s2{
+		width: 47%;
+	}
+	.s3{
+		width: 96%;
+		margin-top: 2%;
+	}
+}
+
+/*		Mobile version		*/
+@media(max-width:767px){
+	section{
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+	.t1, .t2, .t3{
+		left: 80%;
+		padding: 0.6%;
+		width: 21.1%;
+	}
+}
